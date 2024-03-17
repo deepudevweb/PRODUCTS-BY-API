@@ -3,8 +3,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
@@ -12,19 +10,27 @@ code {
     monospace;
 }
 
-.product{
-width: 270px;
-height: 330px;
-border: 1px solid grey;
-overflow: hidden;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
+
+.product {
+  width: 270px;
+  height: 330px;
+  border: 1px solid grey;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .product img {
   width: 270px;
- height: 190px;
+  height: 190px;
   transition: all ease-in .3s;
   align-items: center
 }
+
 .product img:hover {
   scale: 1.1;
 }
@@ -34,8 +40,9 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-size: .8rem;
 
 }
+
 .container {
-  margin: 2rem ;
+  margin: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

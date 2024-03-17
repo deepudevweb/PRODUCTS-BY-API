@@ -1,0 +1,232 @@
+img {
+	max-width: 100%
+}
+
+h4 {
+	font-family: Rubik, sans-serif;
+	margin: 0;
+	font-weight: 400;
+	padding: 0;
+	color: #363940
+}
+
+.no-padding {
+	padding: 0 !important
+}
+
+.go_top {
+	line-height: 40px;
+	cursor: pointer;
+	width: 40px;
+	background: #5867dd;
+	color: #fff;
+	position: fixed;
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	right: -webkit-calc((100% - 1140px)/ 2);
+	right: calc((100% - 1140px)/ 2);
+	z-index: 111;
+	bottom: 80px;
+	text-align: center
+}
+
+.go_top span {
+	display: inline-block
+}
+
+.footer-big {
+	padding: 35px 0 35px 0
+}
+
+.footer-big .footer-widget {
+	margin-bottom: 40px
+}
+
+.footer--light {
+	background-image: url('https://img.freepik.com/free-photo/abstract-pink-smooth-wave-lines_1017-24864.jpg?w=1380&t=st=1710519958~exp=1710520558~hmac=2160943213a4caa4510db3d4e592d954ba1bd78e4020127e50a59efa582379c3');
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1.5px solid #80808038;
+}
+
+.footer-big>p {
+	font-size: 16px;
+	line-height: 30px;
+	color: black;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+
+.footer-menu {
+	padding-left: 48px
+}
+
+
+
+.footer-menu--1 {
+	width: 100%
+}
+
+.footer-menu--1 p {
+	cursor: pointer;
+}
+
+.footer-menu p {
+	cursor: pointer;
+
+}
+
+.footer-menu p:hover {
+	color: coral;
+	text-shadow: 1px 1px 1px black;
+}
+
+.footer-widget-title {
+	line-height: 42px;
+	margin-bottom: 10px;
+	font-size: 18px
+}
+
+.mini-footer {
+	background: #192027;
+	text-align: center;
+	padding: 5px 0
+}
+
+.mini-footer p {
+	margin: 0;
+	line-height: 26px;
+	font-size: 15px;
+	color: #fff
+}
+
+.mini-footer p a {
+	color: #ffffff
+}
+
+.mini-footer p a:hover {
+	color: #34bfa3
+}
+
+.widget-about img {
+	display: block;
+	margin-bottom: 30px
+}
+
+.widget-about p,
+span {
+	font-weight: 400;
+	color: black;
+}
+
+.widget-about .contact-details {
+	margin: 30px 0 0 0
+}
+
+/* social-links */
+
+.hero {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.social-links {
+	display: flex;
+}
+
+.social-links a {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: #000;
+	box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+	margin: 0 30px;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+	transition: transform 0.5s;
+}
+
+.social-links a .fab {
+	font-size: 30px;
+	line-height: 49px;
+	position: relative;
+	z-index: 10;
+	transition: color 0.5s;
+}
+
+.social-links a::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: -90px;
+	left: 0;
+	background: #000;
+	background: linear-gradient(-45deg, #ed1c94, #ffec17);
+	position: absolute;
+	transition: 0.5s;
+}
+
+.social-links a:hover::after {
+	top: 0;
+}
+
+.social-links a:hover .fab {
+	color: #fff;
+}
+
+.social-links a:hover {
+	transform: translateY(-10px);
+}
+
+
+
+@media (max-width:991px) {
+	.footer-menu {
+		padding-left: 0
+	}
+
+	.menu-icon {
+		display: block;
+	}
+}
+
+@media (max-width:469px) {
+
+	.widget-about p,
+	span {
+		font-size: 13px;
+	}
+
+	.footer-menu p {
+		font-size: 13px;
+	}
+
+	.footer-widget-title {
+		font-size: 22px;
+		line-height: 15px;
+		margin-bottom: 10px;
+	}
+
+	.widget-about h3 {
+		font-size: 3rem;
+	}
+
+	.social-links a {
+		width: 35px;
+		height: 35px;
+		margin: 0 7px;
+	}
+
+	.social-links a .fab {
+		font-size: 21px;
+		line-height: 38px;
+	}
+}

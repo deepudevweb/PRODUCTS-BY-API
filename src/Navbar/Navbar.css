@@ -1,44 +1,221 @@
 /* styles.css */
 
-.navbar {
-    background-color: #3d8784;
-    padding: 3px 0;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .navbar-brand {
-    font-size: 1.3rem;
-    color: #fff;
-    display: flex;
-    gap: 3rem;
-  }
-  .navbar-brand h3{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.brand-name {
+  font-size: 25px;
+  padding: 0 15px;
+}
+
+.main-navbar .top-navbar {
+  background: rgb(18, 91, 103);
+  background: linear-gradient(90deg, rgba(18, 91, 103, 1) 19%, rgba(125, 0, 43, 1) 46%, rgba(87, 13, 102, 1) 78%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.main-navbar .top-navbar .brand-name {
   color: #fff;
-  }
-  .navbar img {
-    height: 50px;
-    width: 70px;
-    scale: 2.4;
-  }
-  
-  .navbar-links {
-    display: flex;
+}
+
+.main-navbar .top-navbar .nav-link {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main-navbar .top-navbar .dropdown-menu {
+  padding: 0px 0px;
+  border-radius: 0px;
+}
+
+.main-navbar .top-navbar .dropdown-menu .dropdown-item {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.main-navbar .top-navbar .dropdown-menu .dropdown-item i {
+  width: 20px;
+  text-align: center;
+  color: #d2d9e6;
+  font-size: 14px;
+}
+
+.main-navbar .navbar {
+  padding: 0px;
+  background-color: #ddd;
+}
+
+.main-navbar .navbar .nav-item .nav-link {
+  padding: 8px 20px;
+  color: #e6e2e2;
+  font-size: 15px;
+}
+
+/* nav bottom */
+.menuitem {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, rgba(165, 162, 217, 1) 14%, rgba(217, 84, 84, 1) 44%, rgba(204, 99, 150, 1) 81%);
+  position: absolute;
+  transition: all .5s ease-in;
+  z-index: 2;
+}
+
+.list {
+  padding-left: 1rem;
+}
+
+.list li {
+  color: rgb(255, 244, 244);
+  padding: 0 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+/* dropdown */
+
+.dropdown-items {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff60;
+  height: 22rem;
+  width: 35%;
+  top: 100%;
+  z-index: 1;
+  justify-content: space-between;
+  transition: all .3s linear;
+  transform: translatex(-30px);
+  align-items: center;
+  text-align: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.dropdown-items hr {
+  height: 146px;
+  width: 3px;
+  background-color: rgb(29, 27, 27);
+}
+
+
+.dropdown-items li {
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 3px 15px;
+  color: #000000f3;
+  font-weight: 400;
+}
+
+.dropdown-items li:hover {
+  color: #ff2e2e;
+  font-weight: 400;
+  transition: all 0.1s ease-in;
+}
+
+.list li:nth-child(2):hover .dropdown-items {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-15px);
+  transition: all .2s linear;
+
+}
+
+.menu-icon {
+  display: none !important;
+}
+
+.cross {
+  display: none !important;
+}
+
+
+
+
+/* media  */
+
+
+@media (max-width: 768px) {
+
+
+  .list {
+    display: none;
   }
 
-  .navbar-links .nav-link {
-    color: #fff;
+  .menu-icon {
+    display: block !important;
+    color: #e9e9e9;;
+   
   }
-  
-  .nav-link {
-    margin-right: 15px;
-    font-size: 1rem;
-    color: #fff;
-    cursor: pointer;
+
+  .cross {
+    display: block !important;
+    color: crimson;
   }
-  
-  
+
+  .menu-open {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menuitem {
+    background: linear-gradient(90deg, rgb(165 162 217 / 42%) 14%, rgb(217 84 84 / 46%) 44%, rgb(204 99 150 / 50%) 81%);
+    backdrop-filter: blur(10px);
+  }
+
+  .menu-open li {
+    font-size: 18px;
+    padding: 6px;
+  } 
+
+  .main-navbar .top-navbar .nav-link {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.justify-content-end {
+  justify-content: center;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 2px 3px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 60%;
+  float: right;
+  padding: 0 12px;
+}
+
+.input-group input {
+  font-size: 12px;
+}
+
+.brand-name {
+  font-size: 21px;
+  padding: 0 10px;
+}
+
+
+
+}
